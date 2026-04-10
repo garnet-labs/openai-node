@@ -1,5 +1,30 @@
 # Changelog
 
+## 6.35.0 (2026-04-10)
+
+Full Changelog: [v6.34.0...v6.35.0](https://github.com/openai/openai-node/compare/v6.34.0...v6.35.0)
+
+### Features
+
+* **api:** Add detail to InputFileContent ([910ec5d](https://github.com/openai/openai-node/commit/910ec5d3b7c551eee367f0b10e84856b9eb171eb))
+* **api:** add OAuthErrorCode type ([f84bd1f](https://github.com/openai/openai-node/commit/f84bd1ff47b61e7a5c9b7130f1b6dfd062178501))
+* **api:** add web_search_call.results to ResponseIncludable ([72449a1](https://github.com/openai/openai-node/commit/72449a193fb32dcfd32993f4a01024eed946dc09))
+* **client:** add support for binary messages ([c498cc3](https://github.com/openai/openai-node/commit/c498cc344f49a6ae0382197a6bcc3c22a2af61ff))
+* **client:** add support for path parameters in websockets clients ([e0aba70](https://github.com/openai/openai-node/commit/e0aba7070fa35065aa0093bda02198bd87e7ef9e))
+* **client:** add support for queuing messages when waiting for a connection ([fd8868c](https://github.com/openai/openai-node/commit/fd8868ce76cbc601bd6198f43f5ff47ff0118e67))
+* **client:** support automatic reconnection for websockets ([189410b](https://github.com/openai/openai-node/commit/189410b4765111d8174e815142057ac0e48e8f7e))
+
+
+### Bug Fixes
+
+* **internal:** gitignore generated `oidc` dir ([cf860f6](https://github.com/openai/openai-node/commit/cf860f62c0fcc3c1fcbcb95505fec4301b6481ea))
+
+
+### Chores
+
+* **internal:** codegen related update ([7673137](https://github.com/openai/openai-node/commit/7673137d3004226dc0e8daa96f85e8a5c459b7e3))
+* **internal:** version bump ([34c84ee](https://github.com/openai/openai-node/commit/34c84eec2f9110746008628b90429c8fd5111157))
+
 ## 6.34.0 (2026-04-08)
 
 Full Changelog: [v6.33.0...v6.34.0](https://github.com/openai/openai-node/compare/v6.33.0...v6.34.0)
