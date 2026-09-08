@@ -18,7 +18,14 @@ jobs:
     name: lint
     runs-on: ${{ github.repository == 'stainless-sdks/openai-typescript' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
     if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      GARNET_ACTION_ENABLE_OIDC_AUTH: 'true'
     steps:
+      - uses: garnet-org/action@c747ff1f597c84579e10173301a31c30bb815181 # v2.3.0-rc.1
+
       - uses: actions/checkout@v6
 
       - name: Set up Node
@@ -40,7 +47,11 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    env:
+      GARNET_ACTION_ENABLE_OIDC_AUTH: 'true'
     steps:
+      - uses: garnet-org/action@c747ff1f597c84579e10173301a31c30bb815181 # v2.3.0-rc.1
+
       - uses: actions/checkout@v6
 
       - name: Set up Node
