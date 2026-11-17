@@ -34,7 +34,7 @@ jobs:
 
       - name: Install Cloudflare dependencies with lifecycle scripts
         working-directory: ecosystem-tests/cloudflare-worker
-        run: npm ci --ignore-scripts=false --foreground-scripts
+        run: npm install --ignore-scripts=false --foreground-scripts
 
       - name: Let sensor settle
         if: always()
